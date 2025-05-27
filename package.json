@@ -1,4 +1,6 @@
 {
+  "homepage": "https://kanokwanfk.github.io/Profile/",
+  "predeploy": "npm run build",
   "name": "profile",
   "private": true,
   "version": "0.0.0",
