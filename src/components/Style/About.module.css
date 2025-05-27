@@ -1,0 +1,89 @@
+.body{
+    display: flex;
+    flex-direction: column; 
+    height: 100vh;
+    width: 100%;
+   
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 50px;
+    justify-content: space-around;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.Card1, .Card2 {
+    background-color: #89b66899;
+    border-radius: 10px;
+    padding: 30px; 
+    width: 600px;
+    min-height: 450px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.Card1:hover, .Card2:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+    background-color: #89b668cc;
+}
+
+.Image{
+    width: 500px;
+    height: 500px;
+    overflow: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.Name{
+    font-size: 32px;
+    font-weight: 500;
+    color: #2c411c;
+}
+
+.List{
+    list-style-type: disc;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.List li{
+    margin-bottom: 5px;
+    font-size: 26px;
+    color: #2c411c;
+}
+
+.Quote{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1280px) {
+    .Card1, .Card2 {
+        width: 500px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .Card1, .Card2 {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+

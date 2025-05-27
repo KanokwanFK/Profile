@@ -1,0 +1,139 @@
+.body{
+    display: flex;
+    flex-direction: column; 
+    height: 100vh;
+    width: 100%;
+}
+
+.iconGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.iconItem {
+    background-color: #b3d092;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    transition: transform 0.3s ease;
+    cursor: pointer; 
+}
+
+.iconItem:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.iconLink {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.iconImage{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .iconGrid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+    .icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .iconGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.iconLabel {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: #333;
+}
+
+.iconItemWithBadge {
+    position: relative;
+    background-color: #b3d092;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phoneNumberDisplay {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.phoneNumberDisplay:hover {
+    background-color: #f0f0f0;
+}
+
+.phoneNumberDisplay small {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #888;
+}
+
+.badge {
+    position: absolute;
+    bottom: -10px;
+    background-color: #fff;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+.emailDisplay {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    word-break: break-all; /* สำคัญ! ทำให้อีเมลที่ยาวแสดงผลได้ดีขึ้น */
+}
+
+.emailDisplay:hover {
+    background-color: #f0f0f0;
+}
+
+.emailDisplay small {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #888;
+}

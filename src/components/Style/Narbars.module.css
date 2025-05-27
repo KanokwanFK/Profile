@@ -1,0 +1,22 @@
+.navbar{
+    background-color: #88B668;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    /* border-radius: 8px; */
+
+}
+.logo{
+    align-items: flex-start;
+    display: flex;   
+}
+
+.Links{
+    display: flex;
+    gap: 20px;
+}
+
+.title  {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
