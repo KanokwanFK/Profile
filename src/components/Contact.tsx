@@ -27,7 +27,7 @@ const Contact = () => {
                 <div className={styles.iconGrid}>
                     {/* Instagram */}
                     <div className={styles.iconItem}>
-                        <a href="https://www.instagram.com/12fxng._/" className={styles.iconLink}>
+                        <a href="https://www.instagram.com/12fxng._?igsh=dWZienMxYTVtc2tj&utm_source=qr" className={styles.iconLink}>
                             <img src="https://i.pinimg.com/736x/7e/76/7f/7e767fe360fe2a528c8feb3cd6a7ed19.jpg"
                                 alt="Instagram"
                                 className={styles.iconImage} />
