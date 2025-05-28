@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styles from './Style/Contact.module.css'
 import ContactImge from '../imge/Bg.jpg';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
     const [showPhoneNumber, setShowPhoneNumber] = useState(false);
@@ -84,15 +85,18 @@ const Contact = () => {
                         )}
                     </div>
 
-                    {/* Anime Icon */}
+                    {/* Anime Icon - เพิ่ม Link เพื่อกลับไปหน้าแรก*/}
                     <div className={styles.iconItem}>
-                        <img src="https://i.pinimg.com/736x/ff/9f/ea/ff9fea89eb4be5db9c2cdbef9d425e7d.jpg"
-                            alt="Anime Icon"
-                            className={styles.iconImage} />
+                        <Link to="/" className={styles.iconLink}>
+                            <img src="https://i.pinimg.com/736x/ff/9f/ea/ff9fea89eb4be5db9c2cdbef9d425e7d.jpg"
+                                alt="Anime Icon"
+                                className={styles.iconImage} />
+                            <div className={styles.iconTooltip}>กลับหน้าหลัก</div>
+                        </Link>
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 };
 
