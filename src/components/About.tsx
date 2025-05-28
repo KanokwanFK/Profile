@@ -2,6 +2,7 @@ import styles from './Style/About.module.css';
 import AboutImge from '../imge/Bg.jpg';
 import profileImage from '../imge/proflie.jpg';
 import Quote from '../imge/About.jpg';
+import { Link } from 'react-router-dom';
 
 const About = () => {
     return (
@@ -30,6 +31,7 @@ const About = () => {
 
                     <div>
                         <img src={Quote} alt='Quote' className={styles.Quote} />
+                        <Link to="/contact" className={styles.contactButton}>Contact Me!</Link>    
                     </div>
                 </div>
             </div>
