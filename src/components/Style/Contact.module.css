@@ -3,6 +3,7 @@
     flex-direction: column; 
     height: 100vh;
     width: 100%;
+    padding-bottom: 20px;
 }
 
 .iconGrid {
@@ -49,24 +50,6 @@
     width: 80px;
     height: 80px;
     object-fit: contain;
-}
-
-@media (max-width: 768px) {
-    .iconGrid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-    
-    .icon {
-        width: 60px;
-        height: 60px;
-    }
-}
-
-@media (max-width: 480px) {
-    .iconGrid {
-        grid-template-columns: 1fr;
-    }
 }
 
 .iconLabel {
@@ -136,4 +119,31 @@
     font-size: 12px;
     margin-top: 5px;
     color: #888;
+}
+
+@media (max-width: 768px) {
+    .iconGrid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 30px;
+    }
+    
+    .icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .iconItem{
+        padding: 20px;
+    }
+
+    .emailDisplay, .phoneNumberDisplay {
+        font-size: 14px; 
+        padding: 8px; 
+    }
+
+    .badge {
+        font-size: 10px; 
+        padding: 1px 6px; 
+    }
 }

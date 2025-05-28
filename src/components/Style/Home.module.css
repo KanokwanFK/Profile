@@ -3,6 +3,8 @@
     flex-direction: column; 
     height: 100vh;
     width: 100%;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 .text{
@@ -151,6 +153,117 @@
         height: auto;
         max-height: 60vh;
         width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 42px;
+    }
+    
+    .sub {
+        font-size: 36px;
+    }
+    
+    .description {
+        font-size: 28px;
+        max-width: 100%;
+    }
+    
+    .line {
+        width: 180px;
+    }
+    
+    .body {
+        height: auto;
+        min-height: 100vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .body {
+        height: auto;
+        min-height: 100vh;
+        padding: 1rem;
+    }
+    
+    .text {
+        padding: 0.5rem;
+    }
+    
+    .title {
+        font-size: 34px;
+    }
+    
+    .sub {
+        font-size: 28px;
+    }
+    
+    .description {
+        font-size: 22px;
+        line-height: 1.4;
+    }
+    
+    .line {
+        width: 120px;
+        height: 4px;
+    }
+    
+    .animeContainer {
+        margin-top: 1rem;
+    }
+    
+    .animeImage {
+        max-height: 50vh;
+    }
+    
+    .subtitleWrapper {
+        flex-wrap: wrap;
+    }
+    
+    .actionButton {
+        padding: 0.7rem 1.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .title {
+        font-size: 30px;
+    }
+    
+    .sub {
+        font-size: 24px;
+    }
+    
+    .description {
+        font-size: 18px;
+    }
+    
+    .line {
+        width: 100px;
+    }
+}
+
+/* รองรับการหมุนจอแนวนอน */
+@media (max-height: 600px) and (orientation: landscape) {
+    .body {
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .animeContainer {
+        position: relative;
+        right: auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .animeImage {
+        max-height: 70vh;
+    }
+    
+    .description {
+        font-size: 20px;
     }
 }
 

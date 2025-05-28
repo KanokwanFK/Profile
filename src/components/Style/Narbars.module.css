@@ -3,8 +3,11 @@
     display: flex;
     justify-content: space-between;
     font-size: 30px;
-    /* border-radius: 8px; */
-
+    padding: 10px 15px;
+    align-items: center;
+    flex-wrap: wrap; /* ทำให้สามารถขึ้นบรรทัดใหม่ได้เมื่อพื้นที่ไม่พอ */
+    width: 100%;
+    box-sizing: border-box;
 }
 .logo{
     align-items: flex-start;
@@ -19,4 +22,32 @@
 .title  {
     color: rgb(0, 0, 0);
     text-decoration: none;
+}
+
+/* Media Query สำหรับมือถือ */
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 22px; /* ลดขนาดตัวอักษรลงบนมือถือ */
+        flex-direction: column; /* จัดเรียงแบบแนวตั้ง */
+        align-items: center;
+        gap: 1px;
+    }
+    
+    .Links {
+        flex-wrap: wrap; /* ให้ลิงก์สามารถขึ้นบรรทัดใหม่ได้ */
+        justify-content: center; /* จัดให้อยู่ตรงกลาง */
+        gap: 10px; /* ระยะห่างระหว่างลิงก์ */
+        margin-top: 5px;
+    }
+    
+    /* สำหรับหน้าจอขนาดเล็กมาก */
+    @media (max-width: 400px) {
+        .navbar {
+            font-size: 20px;
+        }
+        
+        .Links {
+            gap: 10px;
+        }
+    }
 }

@@ -87,3 +87,80 @@
     }
 }
 
+/* สำหรับมือถือ */
+@media (max-width: 768px) {
+    .body {
+        height: auto; 
+        min-height: 100vh; 
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        max-width: 100%; 
+        margin: 0 auto; 
+        align-items: center;
+    }
+    
+    .Card1, .Card2 {
+        padding: 20px;
+        min-height: auto; 
+    }
+    
+    .Name {
+        font-size: 26px; 
+    }
+    
+    .List li {
+        font-size: 20px; 
+    }
+    
+    .Quote {
+        width: 100%; 
+        max-width: 250px; 
+        height: auto; 
+    }
+
+    .Image {
+        width: 100%; 
+        height: auto; 
+        max-width: 100%; 
+    }
+}
+
+/* สำหรับมือถือขนาดเล็ก */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        max-width: 100%; 
+        margin: 0 auto;
+        align-items: center;
+    }
+    
+    .Card1, .Card2 {
+        padding: 15px; 
+    }
+    
+    .Name {
+        font-size: 22px; 
+    }
+    
+    .List li {
+        font-size: 18px; 
+        margin-bottom: 3px; 
+    }
+    
+    .Image {
+        width: 100%; 
+        height: auto; 
+        max-width: 100%; 
+    }
+    
+    .List {
+        padding-left: 25px; 
+    }
+}
