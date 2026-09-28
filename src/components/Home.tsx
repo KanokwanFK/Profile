@@ -25,7 +25,7 @@ const Home = () => {
         }}>
             <div className={styles.text}>
                 <div className={styles.content}>
-                    <h1 className={styles.title}>HELLO I'M FANG KHAOW</h1>
+                    <h1 className={styles.title}>HELLO I'M FANG KAOW</h1>
                     <div className={styles.subtitleWrapper}>
                         <span className={styles.line}></span>
                         <h2 className={styles.sub}> INTERNSHIP</h2>

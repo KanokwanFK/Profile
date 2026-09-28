@@ -48,7 +48,7 @@ const Contact = () => {
                     <div className={styles.iconItem}>
                         {showPhoneNumber ? (
                             <div className={styles.phoneNumberDisplay} onClick={() => setShowPhoneNumber(false)}>
-                                <p>099-0XX-XXXX</p>
+                                <p>099-029-3644</p>
                                 <small>(คลิกเพื่อกลับ)</small>
                             </div>
                         ) : (
